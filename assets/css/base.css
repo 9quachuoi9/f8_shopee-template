@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -43,6 +44,40 @@ li {
     flex-wrap: wrap;
 }
 
+.btn {
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    min-width: 142px;
+    height: 36px;
+    font-size: 1.4rem;
+    padding: 0 8px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+}
+
+.btn.btn--normal:hover {
+    background-color: #f1f2f6;  
+}
+
+.btn.btn-main {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.btn.btn-disable {
+    cursor: not-allowed;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from {
@@ -51,4 +86,26 @@ li {
     to {
         opacity: 1;
     }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    margin: auto;
+    position: relative;
+    z-index: 1;
 }
