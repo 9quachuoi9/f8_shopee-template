@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>F8 Shop</title>
-        <script src="./main.js"></script>
-        <link
-            rel="shortcut icon"
-            href="./assets/img/favicon.png"
-            type="image/x-icon"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <script
-            src="https://kit.fontawesome.com/41d730b603.js"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="stylesheet" href="./assets/css/base.css" />
-        <link rel="stylesheet" href="./assets/css/responsive.css" />
-        <link rel="stylesheet" href="./assets/css/main.css" />
-    </head>
 
-    <body>
-        <div class="app">
-            <div class="header">
-                <div class="grid">
-                    <nav class="header__navbar">
-                        <ul class="header__navbar-list">
-                            <li
-                                class="header__navbar-item header__navbar-item--has-qr separate"
-                            >
-                                Vào cửa hàng trên ứng dụng F8-Shop
-                                <div class="header__qr">
-                                    <img
-                                        src="./assets/img/qr-code.png"
-                                        alt="QR Code"
-                                        class="header_qr-img"
-                                    />
-                                    <div class="header__qr-apps">
-                                        <a href="#" class="header__qr-link">
-                                            <img
-                                                src="./assets/img/ch-play.png"
-                                                alt="CH-Play"
-                                                class="header__qr-download-img"
-                                            />
-                                        </a>
-                                        <a href="#" class="header__qr-link">
-                                            <img
-                                                src="./assets/img/app-store.png"
-                                                alt="App Store"
-                                                class="header__qr-download-img"
-                                            />
-                                        </a>
-                                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F8 Shop</title>
+    <script src="./main.js"></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/41d730b603.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr separate">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+                            <div class="header__qr">
+                                <img src="./assets/img/qr-code.png" alt="QR Code" class="header_qr-img" />
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/img/ch-play.png" alt="CH-Play"
+                                            class="header__qr-download-img" />
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/img/app-store.png" alt="App Store"
+                                            class="header__qr-download-img" />
+                                    </a>
                                 </div>
-                            </li>
-                            <li class="header__navbar-item">
-                                <span class="header__navbar--title2"
-                                    >Kết nối</span
-                                >
-                                <a href="#" class="header__navbar-icon-link"
-                                    ><i
-                                        class="header__navbar-icon fa-brands fa-facebook"
-                                    ></i
-                                ></a>
-                                
-                                <a href="#" class="header__navbar-icon-link"
-                                    ><i
-                                        class="header__navbar-icon fa-brands fa-instagram"
-                                    ></i
-                                ></a>
-                            </li>
-                        </ul>
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item">
-                                <a href="#" class="header__navbar-item-link">
-                                    <i
-                                        class="header__navbar-icon fa-regular fa-bell"
-                                    ></i>
-                                    Thông báo
-                                </a>
-                            </li>
-                            <li class="header__navbar-item">
-                                <a href="#" class="header__navbar-item-link">
-                                    <i
-                                        class="header__navbar-icon fa-regular fa-circle-question"
-                                    ></i>
-                                    Trợ giúp
-                                </a>
-                            </li>
-                            <li class="header__navbar-item bold-400 separate">
-                                Đăng ký
-                            </li>
-                            <li class="header__navbar-item bold-400">
-                                Đăng nhập
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar--title2">Kết nối</span>
+                            <a href="#" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-facebook"></i></a>
+
+                            <a href="#" class="header__navbar-icon-link"><i
+                                    class="header__navbar-icon fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar--has-notify">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header bold-400">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/ao-thun-Marvel-Oversize-Black-Panther---Outline-den-12_90.jpg"
+                                                alt="Coat" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name bold-400">Áo thun Marvel Oversize Black
+                                                    Panther - Outline</span>
+                                                <span class="header__notify-desc">Là sản phẩm của sự hợp tác giữa
+                                                    Coolmate và Disney - đơn vị sở hữu bản quyền Marvel</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/84rising-short-moss-black-Truoc.jpg"
+                                                alt="Coat" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name bold-400">Quần shorts gió
+                                                    84RISING</span>
+                                                <span class="header__notify-desc">84Rising lần đầu cho ra mắt sản phẩm
+                                                    Quần short với nhưng tính năng và thiết kế vượt trội</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/July2022/3_25_6.jpg"
+                                                alt="Coat" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name bold-400">Áo thun Marvel Graphics
+                                                    Avengers</span>
+                                                <span class="header__notify-desc">Là sản phẩm của sự hợp tác giữa
+                                                    Coolmate và Disney - đơn vị sở hữu bản quyền Marvel. Chiếc áo thun
+                                                    có thành phần là sợi
+                                                    tái chế tại Việt Nam</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item bold-400 separate">
+                            Đăng ký
+                        </li>
+                        <li class="header__navbar-item bold-400">
+                            Đăng nhập
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <div class="container"></div>
-
-            <footer class="footer"></footer>
         </div>
-    </body>
+
+        <div class="container"></div>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+
 </html>
