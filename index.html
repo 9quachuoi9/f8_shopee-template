@@ -119,11 +119,22 @@
                                     Trợ giúp
                                 </a>
                             </li>
-                            <li class="header__navbar-item bold-400 separate">
+                            <!-- <li class="header__navbar-item bold-400 separate">
                                 Đăng ký
                             </li>
                             <li class="header__navbar-item bold-400">
                                 Đăng nhập
+                            </li> -->
+
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/avatar.jpg" alt="avatar" class="header__navbar-user-img">
+                                <p href="#" class="header__navbar-user-name">Bé An</p>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item"><a href="#">Tài khoảng của tôi</a></li>
+                                    <li class="header__navbar-user-item"><a href="#">Địa chỉ của tôi</a></li>
+                                    <li class="header__navbar-user-item"><a href="#">Đơn mua</a></li>
+                                    <li class="header__navbar-user-item"><a href="#">Đăng xuất</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -156,7 +167,8 @@
 
                                 <ul class="header__search-option">
                                     <li class="header__search-option-item header__search-option-item--active">
-                                        <span>Trong shop</span><i class="fa-solid fa-check"></i></li>
+                                        <span>Trong shop</span><i class="fa-solid fa-check"></i>
+                                    </li>
                                     <li class="header__search-option-item"><span>Ngoài shop</span><i
                                             class="fa-solid fa-check"></i></li>
                                 </ul>
@@ -166,8 +178,82 @@
                                     class="header__search-icon fa-solid fa-magnifying-glass"></i></button>
                         </div>
 
+                        <!-- Cart layout -->
                         <div class="header__cart">
-                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <!-- Header cart--no-cart -->
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">3</span>
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="No cart" class="header__cart-img--no-cart">
+                                    <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <!-- Cart item -->
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product-img/ao-thun-Marvel-Oversize-Black-Panther---Outline-den-12_90.webp"
+                                                alt="Áo thun coolmate" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Áo thun Marvel Oversize Black
+                                                        Panther - Outline</h5>
+                                                    <div class="header__cart-item-wrap">
+                                                        <span class="header__cart-item-price">299.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">Phân loại: đen sọc trắng</span>
+                                                    <span class="header__cart-item-rm">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product-img/ao-thun-Marvel-Oversize-King4ever-1_63.jpg"
+                                                alt="Áo thun coolmate" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Áo thun Marvel Oversize King4ever
+                                                    </h5>
+                                                    <div class="header__cart-item-wrap">
+                                                        <span class="header__cart-item-price">299.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">Phân loại: đen sọc trắng</span>
+                                                    <span class="header__cart-item-rm">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product-img/ao-thun-Marvel-Oversize-Wakanda-Forever-8.webp"
+                                                alt="Áo thun coolmate" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Áo thun Marvel Oversize Wakanda
+                                                        Forever</h5>
+                                                    <div class="header__cart-item-wrap">
+                                                        <span class="header__cart-item-price">299.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">Phân loại: đen sọc trắng</span>
+                                                    <span class="header__cart-item-rm">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="header__cart-view-cart btn btn-main">Xem giỏ hàng</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
