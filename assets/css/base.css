@@ -176,3 +176,37 @@ li {
     position: relative;
     top: 1px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item {
+    margin: 0 8px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--main-color);
+    color: var(--white-color);
+
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    filter: brightness(120%);
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.pagination-item__link-icon {}
