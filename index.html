@@ -15,15 +15,16 @@
             rel="stylesheet" />
         <script src="https://kit.fontawesome.com/41d730b603.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./assets/css/base.css" />
-        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
 
     <body>
         <div class="app">
             <div class="header">
-                <div class="grid">
-                    <nav class="header__navbar">
+                <div class="grid wide">
+                    <nav class="header__navbar hide-on-mobile-tablet">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item header__navbar-item--has-qr separate">
                                 Vào cửa hàng trên ứng dụng F8-Shop
@@ -128,9 +129,7 @@
 
                             <li class="header__navbar-item header__navbar-user">
                                 <img src="./assets/img/avatar.jpg" alt="avatar" class="header__navbar-user-img" />
-                                <span href="#" class="header__navbar-user-name">
-                                    Bé An
-                                </span>
+                                <span href="#" class="header__navbar-user-name">SupperCat</span>
                                 <ul class="header__navbar-user-menu">
                                     <li class="header__navbar-user-item">
                                         <a href="#">Tài khoảng của tôi</a>
@@ -149,7 +148,11 @@
                         </ul>
                     </nav>
                     <div class="header-with-search">
-                        <div class="header__logo">
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                        </label>
+
+                        <div class="header__logo hide-on-tablet">
                             <a href="/" class="header__logo-link">
                                 <svg viewBox="0 0 192 65" class="header__logo-img">
                                     <g fill-rule="evenodd">
@@ -161,6 +164,7 @@
                             </a>
                         </div>
 
+                        <input type="checkbox" hidden id="mobile-search-checkbox" class="header__checkbox">
                         <div class="header__search">
                             <div class="header__search-input-wrap">
                                 <input type="text" class="header__search-input"
@@ -380,12 +384,27 @@
                         </div>
                     </div>
                 </div>
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item"><a href="#" class="header__sort-link">Liên quan</a></li>
+                    <li class="header__sort-item header__sort-item--active"><a href="#" class="header__sort-link">Mới
+                            nhất</a></li>
+                    <li class="header__sort-item"><a href="#" class="header__sort-link">Bán chạy</a></li>
+                    <li class="header__sort-item">
+                        <a href="#" class="header__sort-link">
+                            Giá
+                            <span>
+                                <i class="fa-solid fa-chevron-up"></i>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="app__container">
-                <div class="grid">
-                    <div class="grid__row app__content">
-                        <div class="grid__col-2">
+                <div class="grid wide">
+                    <div class="row app__content sm-gutter">
+                        <div class="col l-2 m-0 c-0">
                             <div class="category">
                                 <h3 class="category__heading">Danh mục</h3>
                                 <ul class="category-list">
@@ -402,8 +421,8 @@
                             </div>
                         </div>
 
-                        <div class="grid__col-10">
-                            <div class="home-filter">
+                        <div class="col l-10 m-12 c-12">
+                            <div class="home-filter hide-on-mobile-tablet">
                                 <span class="home-filter__lable">Sắp xếp theo</span>
                                 <button class="home-filter__btn btn">
                                     Phổ biến
@@ -441,9 +460,68 @@
                                 </div>
                             </div>
 
+                            <nav class="mobile-category">
+                                <ul class="mobile-category__list">
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài coolmate</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="#" class="mobile-category__link">Áo thun tay dài</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
                             <div class="home-product">
-                                <div class="grid__row">
-                                    <div class="grid__col-2-4">
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                     background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/July2022/1(1)_20.jpg');
@@ -486,7 +564,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                     background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/October2022/ao-thun-Marvel-Oversize-King4ever-1_63.jpg');
@@ -529,7 +607,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                     background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/ao-thun-Marvel-Oversize-Graffiti-Warrior-King-1_2_21.jpg');
@@ -572,7 +650,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                     background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/October2022/24.jpg');
@@ -615,7 +693,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                     background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/jean-clean-denim-regular-s2-xanh-dam-7_60.jpg');
@@ -658,7 +736,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img"
                                                 style="background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=100/uploads/October2022/84rising-oversize-basic-tee-trang_68.jpg');">
@@ -700,7 +778,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img"
                                                 style="background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/October2022/84rising-oversize-hoodie-YOUTH-CULTURE-Truoc.png');">
@@ -742,7 +820,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img"
                                                 style="background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/84rising-short-moss-black-Truoc.jpg');">
@@ -784,7 +862,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                                                         background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/October2022/84rising-oversize-hoodie-LOGO-TYPOGRAPHY-HOODIE-GREY-Truoc.png');
@@ -826,7 +904,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__col-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="
                                                                                         background-image: url('https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/November2022/84_rising_1.jpg');
@@ -906,93 +984,105 @@
                 </div>
             </div>
 
-            <footer class="footer">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__col-2-4">
-                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">F8-Shop Mall</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
-                                </li>
-                            </ul>
+            <footer class="footer footer-padding">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-4 c-6">
+                            <div class="footer-item-contain">
+                                <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">F8-Shop Mall</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="grid__col-2-4">
-                            <h3 class="footer__heading">Giới thiệu</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Giới thiệu</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Tuyển dụng</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Điều khoản</a>
-                                </li>
-                            </ul>
+                        <div class="col l-2-4 m-4 c-6">
+                            <div class="footer-item-contain">
+
+                                <h3 class="footer__heading">Giới thiệu</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Giới thiệu</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Tuyển dụng</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Điều khoản</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="grid__col-2-4">
-                            <h3 class="footer__heading">Danh mục</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Áo tay ngắn</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Áo tay dài</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="#" class="footer-item__link">Áo không tay</a>
-                                </li>
-                            </ul>
+                        <div class="col l-2-4 m-4 c-6">
+                            <div class="footer-item-contain">
+
+                                <h3 class="footer__heading">Danh mục</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Áo tay ngắn</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Áo tay dài</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Áo không tay</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="grid__col-2-4">
-                            <h3 class="footer__heading">Theo dõi</h3>
-                            <li class="footer-item">
-                                <a href="#" class="footer-item__link"><i
-                                        class="footer-item__icon fa-brands fa-facebook"></i>Facebook</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#" class="footer-item__link"><i
-                                        class="footer-item__icon fa-brands fa-instagram"></i>Instagram</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#" class="footer-item__link"><i
-                                        class="footer-item__icon fa-brands fa-linkedin"></i>Linkedin</a>
-                            </li>
+                        <div class="col l-2-4 m-4 c-6">
+                            <div class="footer-item-contain">
+                                <h3 class="footer__heading">Theo dõi</h3>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link"><i
+                                            class="footer-item__icon fa-brands fa-facebook"></i>Facebook</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link"><i
+                                            class="footer-item__icon fa-brands fa-instagram"></i>Instagram</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link"><i
+                                            class="footer-item__icon fa-brands fa-linkedin"></i>Linkedin</a>
+                                </li>
+                            </div>
                         </div>
 
-                        <div class="grid__col-2-4">
-                            <h3 class="footer__heading">
-                                Vào cửa hàng trên ứng dụng
-                            </h3>
-                            <div class="footer__download">
-                                <div class="footer__download-wrap"><img src="./assets/img/qr-code.png" alt="QR Code"
-                                        class="footer__download-qr" />
-                                </div>
-                                <div class="footer__download-app">
-                                    <a href="#" class="footer__download-link"><img src="./assets/img/ch-play.png"
-                                            alt="CH-Play" class="footer__download-img" /></a>
-                                    <a href="#" class="footer__download-link"><img src="./assets/img/app-store.png"
-                                            alt="App Store" class="footer__download-img" /></a>
+                        <div class="col l-2-4 m-4 c-12">
+                            <div class="footer-item-contain">
+                                <h3 class="footer__heading">
+                                    Vào cửa hàng trên ứng dụng
+                                </h3>
+                                <div class="footer__download">
+                                    <div class="footer__download-wrap"><img src="./assets/img/qr-code.png" alt="QR Code"
+                                            class="footer__download-qr" />
+                                    </div>
+                                    <div class="footer__download-app">
+                                        <a href="#" class="footer__download-link"><img src="./assets/img/ch-play.png"
+                                                alt="CH-Play" class="footer__download-img" /></a>
+                                        <a href="#" class="footer__download-link"><img src="./assets/img/app-store.png"
+                                                alt="App Store" class="footer__download-img" /></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="footer__copyright">
-                    <p class="footer__copyright-desc">© 2019 - Bản quyền thuộc về F8-Shop</p>
-                </div>
             </footer>
+            <div class="footer__copyright">
+                <p class="footer__copyright-desc">© 2022 - Bản quyền thuộc về SuperCat</p>
+            </div>
 
             <div class="modal">
                 <div class="modal__overlay"></div>
